@@ -1,0 +1,201 @@
+<!-- Alyssa Rodriguez-ECS 162-Museum Exhibit-->
+<!-- this is the awful HTML comment syntax -->
+<!DOCTYPE html>
+<!-- message to browser...I think I am HTML -->
+<html lang="en">
+  <!-- my text is in English -->
+
+  <head>
+    <!-- binary encoding of characters -->
+    <meta charset="utf-8" />
+    <title>museum exhibit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- to get rid of default CSS-->
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <!-- import the webpage's css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- downloading fonts needed for website -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat: 200,300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans: 200,300,400,600,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- header of webpage -->
+  <body>
+    <header>
+      <div class="flex-container-header">
+        <p id="titleChangeColor1">
+          jan shrem and maria<span id="titleChangeColor2">
+            manetti shrem museum
+          </span>
+          of art
+        </p>
+        <ul id="dummyButtons">
+          <li class="dumbButtons">home</li>
+          <li class="dumbButtons">visit</li>
+          <li class="dumbButtons">about</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- counter starting at May 10, 2020 -->
+    <div class="flex-container-counter">
+      <div id="countdown"></div>
+    </div>
+
+    <!-- main headings -->
+    <main>
+      <!-- display main heading of the website -->
+      <h1 id="mainHeading1">
+        <b> Stephan Kaltenbach: The Beginning and The End </b>
+      </h1>
+      <h2 id="mainHeading2"><b> On view January 26 - May 10, 2020 </b></h2>
+
+      <!-- slideshow -->
+      <div class="flexbox-container-slideshow">
+        <div class="slideshow fade">
+          <!-- image 1 -->
+          <img
+            class="images"
+            src="https://cdn.glitch.com/fc7853ba-36fa-474f-8a44-ceb8529ce04d%2Ffabric.jpg?v=1585885448867"
+          />
+          <!-- counter for images-->
+          <div class="imgCounter">1/4</div>
+          <!-- caption 1 -->
+          <div class="caption">
+            Stephen Kaltenbach and guests, MODERN DRAPERY, 2020. Felt Fabric, 45
+            x 60 inches
+          </div>
+        </div>
+
+        <div class="slideshow fade">
+          <!-- image 2 -->
+          <img
+            class="images"
+            src="https://cdn.glitch.com/fc7853ba-36fa-474f-8a44-ceb8529ce04d%2FfatherPortrait.jpg?v=1585885485697"
+          />
+          <!-- counter for images-->
+          <div class="imgCounter">2/4</div>
+          <!-- caption 2 -->
+          <div class="caption">
+            Stephen Kaltenback, Portrait of My Father, 1972-79. Acrylic on
+            canvas, 114 x 170 3/4 inches
+          </div>
+        </div>
+
+        <div class="slideshow fade">
+          <!-- image 3 -->
+          <img
+            class="images"
+            src="https://cdn.glitch.com/fc7853ba-36fa-474f-8a44-ceb8529ce04d%2FroomCube.jpg?v=1585885550174"
+          />
+          <!-- counter for images-->
+          <div class="imgCounter">3/4</div>
+          <!-- caption 3 -->
+          <div class="caption">
+            Stephen Kaltenback, Room Cube, 1967. Blueprint, 18 x 24 inches,
+            edition of 10.
+          </div>
+        </div>
+
+        <div class="slideshow fade">
+          <!-- image 4 -->
+          <img
+            class="images"
+            src="https://cdn.glitch.com/fc7853ba-36fa-474f-8a44-ceb8529ce04d%2FopenAfterDeath.jpg?v=1585885502367"
+          />
+          <!-- counter for images-->
+          <div class="imgCounter">4/4</div>
+          <!-- caption 4 -->
+          <div class="caption">
+            Stephen Kaltenback, OPEN AFTER MY DEATH, 1970. Mild steel, engraved,
+            with unknown contents, 3 x 6 x 3 inches.
+          </div>
+        </div>
+
+        <!-- buttons -->
+        <button class="button-prev" onclick="plusImgs(-1)">&#10094;</button>
+        <button class="button-next" onclick="plusImgs(+1)">&#10095;</button>
+      </div>
+
+      <!-- 4 small cicles -->
+      <div class="flex-container-circles">
+        <div class="circles" onclick="currImg(1)"></div>
+        <div class="circles" onclick="currImg(2)"></div>
+        <div class="circles" onclick="currImg(3)"></div>
+        <div class="circles" onclick="currImg(4)"></div>
+      </div>
+
+      <!-- main article of webpage -->
+      <div class="flexbox-container-article">
+        <p class="article">
+          During the late 1960s, after graduating from UC Davis (BA, 1966; MA,
+          1967) and moving to New York, Stephen Kaltenbach established a
+          reputation in the emerging international field of Conceptual art. But
+          in 1970, just as he was achieving career success, Kaltenbach abruptly
+          withdrew to California’s Central Valley, appearing to abandon
+          Conceptual work in favor of the more traditional mediums of painting
+          and sculpture. Coinciding with the 50th anniversary of his “dropout,”
+          this exhibition considers Kaltenbach’s engagement with time as a
+          principal theme across his remarkably diverse career, which
+          encompasses bronze time capsules, advertisements placed anonymously in
+          Artforum magazine in 1968-69, and the monumental photorealist painting
+          Portrait of My Father (1972-79)
+        </p>
+        <br />
+        <p class="article">Guest Curators: Constance Lewallen and Ted Mann</p>
+        <br />
+      </div>
+    </main>
+
+    <!-- footer of webpage -->
+    <footer>
+      <div class="flexbox-container-footer">
+        <div>
+          <h6 class="footer-head1">manetti shrem museum</h6>
+          <br />
+          <p id="footer-par1">
+            254 Old Davis Rd.<br />
+            Davis, CA 95616
+          </p>
+        </div>
+
+        <div>
+          <h6 class="footer-head1">Hours</h6>
+          <ul id="hours">
+            <br />
+            <li>Tuesday, Wednesday, and Friday: Noon-6pm</li>
+            <br />
+            <li>Thursday: Noon-9pm</li>
+            <br />
+            <li>Saturday-Sunday: 11am-5pm</li>
+            <br />
+            <li>Monday: Closed</li>
+            <br />
+          </ul>
+        </div>
+
+        <div>
+          <h6 id="footer-head2">
+            The Manetti Shrem Museum will be temporarily closed starting March
+            16, 2020
+          </h6>
+          <br />
+          <p id="footer-par2">
+            This is to prioritize the health and safety of our students,
+            faculty, and the community at large. Thank you for your patience.
+          </p>
+          <br />
+        </div>
+      </div>
+    </footer>
+    <!-- import the webpage's browser-side javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
